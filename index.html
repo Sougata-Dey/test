@@ -7,48 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
-        emailjs.init({
-          publicKey: "ctpltJQhfSND8Z3SI",
-        });
-    })();
-  </script> -->
-
 
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
 
     <aside class="sidebar" data-sidebar>
 
@@ -170,19 +141,7 @@
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
 
       <nav class="navbar">
 
@@ -212,14 +171,6 @@
 
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
       <article class="about  active" data-page="about">
 
         <header>
@@ -241,11 +192,6 @@
             message and identity in the most creative way. I created web design for many famous brand companies.
           </p>
         </section>
-
-
-        <!--
-          - service
-        -->
 
         <section class="service">
 
@@ -322,38 +268,11 @@
 
         </section>
 
-
-        <!--
-          - testimonials
-        -->
-
-        
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        
-
-
-        <!--
-          - clients
-        -->
-
         <section class="clients">
-
-          
 
         </section>
 
       </article>
-
-
-
-      <!--
-        - #RESUME
-      -->
 
       <article class="resume" data-page="resume">
 
@@ -469,7 +388,6 @@
 
       </article>
 
-
       <article class="skills" data-page="skills">
         <section class="skill">
             <h2 class="h2 article-title">Skills</h2>
@@ -530,7 +448,6 @@
                   </div>
                 </li>
 
-
                 <li class="skills-item">
                   <div class="title-wrapper">
                     <img src="./assets/css.png" alt="Web Design">
@@ -543,7 +460,6 @@
                     </div>
                   </div>
                 </li>
-
 
                 <li class="skills-item">
                   <div class="title-wrapper">
@@ -558,7 +474,6 @@
                   </div>
                 </li>
 
-
                 <li class="skills-item">
                   <div class="title-wrapper">
                     <img src="./assets/react.png" alt="Web Design">
@@ -571,7 +486,6 @@
                     </div>
                   </div>
                 </li>
-
 
                 <li class="skills-item">
                   <div class="title-wrapper">
@@ -590,17 +504,8 @@
             
             </section>
             
-            
         </section>
     </article>
-    
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
 
       <article class="projects" data-page="projects">
 
@@ -834,24 +739,6 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-  
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
       <article class="contact" data-page="contact">
 
         <header>
@@ -868,30 +755,28 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formsubmit.co/f3b5f063f505c0f17a9bccfab24f1a6d" method="POST" class="form" data-form>
+          <form action="https://api.web3forms.com/submit" method="POST" class="form">
 
+            <!-- Your access key -->
+            <input type="hidden" name="access_key" value="3bc05e77-72a4-4bba-b579-effce0fa36fc">
+          
+            <!-- Redirect after success -->
+            <input type="hidden" name="redirect" value="https://yourusername.github.io/thanks.html" />
+          
+            <!-- Form fields -->
             <div class="input-wrapper">
-              <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required data-form-input>
-            
-              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="name" placeholder="Full name" required class="form-input" />
+              <input type="email" name="email" placeholder="Email address" required class="form-input" />
             </div>
-            
-            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <input type="hidden" name="_captcha" value="false">
-
-
-            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-
-            <input type="hidden" name="_template" value="table">
-            
-            <button class="form-btn" type="submit" data-form-btn>
+          
+            <textarea name="message" placeholder="Your Message" required class="form-input"></textarea>
+          
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-            
-
-          </form>
           
+          </form>
 
         </section>
 
@@ -901,21 +786,17 @@
 
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+  <!-- <script>
+    window.onload = function() {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    };
+  </script> -->
+  
 
 </body>
 
